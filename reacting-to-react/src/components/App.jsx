@@ -2,26 +2,32 @@ import React, { Component } from 'react';
 
 
 /*
-const App = (props) => {
+//basic App component
+let App = (props) => {
     return <h1>Hello, Hello..., {props.name}!</h1>;
 }
 */
 
+//class based componenet
 class App extends Component {
     constructor (props) {
         super(props);
-        this.state = {text: 'enter text here', hasLoaded: false};
+        //initialize state
+        //concatenate these strings in the same pair of JSX curly brace
+        this.state = {text: 'Add some text here...', hasLoaded: false};
     }
 
+    
     handleEvent = (text) => {
         this.setState({text})
     }
+    
 
     handleClick = () => {
         this.setState({hasLoaded: !this.state.hasLoaded});
     }
 
-    componentDidMount = () => {
+    componentDisplayed = () => {
         this.setState({hasLoaded: true});
     }
 

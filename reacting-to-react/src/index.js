@@ -7,7 +7,7 @@ ReactDOM.render(<App name="Lover"/>, document.getElementById('root'));
 
  const Name = (props) => {
     return (
-          'Text!'
+        "Returning something!"
      );
 };
 export default Name;
